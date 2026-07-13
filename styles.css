@@ -1,0 +1,138 @@
+:root {
+  color-scheme: light dark;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #121826;
+  color: #f4f7fb;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.page-header {
+  margin-bottom: 20px;
+}
+
+.page-header h1 {
+  margin: 0 0 8px;
+}
+
+.dropzone {
+  border: 2px dashed #4b8bf3;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  background: rgba(75, 139, 243, 0.12);
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.dropzone.dragover {
+  background: rgba(75, 139, 243, 0.28);
+}
+
+.dropzone input {
+  display: block;
+  margin: 0 auto 12px;
+}
+
+.toolbar {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.search-label {
+  font-weight: 700;
+}
+
+#searchInput {
+  flex: 1 1 260px;
+  min-width: 240px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #98a7c7;
+}
+
+#clearButton {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #f97316;
+  color: white;
+  cursor: pointer;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.summary-card {
+  background: #1d2638;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.summary-label {
+  display: block;
+  font-size: 0.9rem;
+  color: #b9c6dd;
+  margin-bottom: 8px;
+}
+
+.summary-card strong {
+  font-size: 1.8rem;
+}
+
+.table-section {
+  margin-top: 24px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.table-wrap {
+  overflow: auto;
+  border-radius: 12px;
+  background: #1d2638;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+th {
+  background: #273247;
+}
+
+tbody tr:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.empty {
+  color: #b9c6dd;
+  font-style: italic;
+}
